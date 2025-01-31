@@ -18,7 +18,7 @@ public class StartController {
     private Button startBtn;
 
     @FXML
-    void btnStart(ActionEvent event) throws IOException {
+    void btnStart(ActionEvent ignoredEvent) throws IOException {
         System.out.println("Игра началась!!!");
         createWindow();
 

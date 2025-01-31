@@ -41,7 +41,7 @@ public class TicTacToeController {
 
     }
 
-    public boolean isFull() {
+    private boolean isFull() {
         int k = 0;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -53,7 +53,7 @@ public class TicTacToeController {
         return k == 9;
     }
 
-    public boolean isWin() {
+    private boolean isWin() {
         for (int i = 0; i < 3; i++) {
             if (field[i][0] == field[i][1] && field[i][0] == field[i][2] && (field[i][0] == 'x' || field[i][0] == 'o')) {
                 return true;
